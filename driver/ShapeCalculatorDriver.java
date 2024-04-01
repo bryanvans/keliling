@@ -15,21 +15,21 @@ public class ShapeCalculatorDriver {
         Rectangle rectangle = new Rectangle(4, 6);
         Triangle triangle = new Triangle(3, 4, 5);
 
-        System.out.println("Pilih jenis bentuk (0: Lingkaran, 1: Persegi Panjang, 2: Segitiga): ");
+        System.out.println("Choose shape type (0: Circle, 1: Rectangle, 2: Triangle): ");
         int choice = scanner.nextInt();
 
         switch (choice) {
             case 0:
-                System.out.println("Keliling Lingkaran: " + calculatePerimeter(circle));
+                System.out.println("Perimeter Circle: " + calculatePerimeter(circle));
                 break;
             case 1:
-                System.out.println("Keliling Persegi Panjang: " + calculatePerimeter(rectangle));
+                System.out.println("Perimeter Rectangle: " + calculatePerimeter(rectangle));
                 break;
             case 2:
-                System.out.println("Keliling Segitiga: " + calculatePerimeter(triangle));
+                System.out.println("Perimeter Triangle: " + calculatePerimeter(triangle));
                 break;
             default:
-                System.out.println("Pilihan tidak valid!");
+                System.out.println("Choose not valid!");
         }
 
         scanner.close();
